@@ -1,0 +1,831 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#"
+     xml:base="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology-of-the-3-kingdoms="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#as_corrupter -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#as_corrupter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-involved"/>
+        <rdfs:comment xml:lang="en">as_corrupter</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#as_politician -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#as_politician">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-involved"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#as_traitor -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#as_traitor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-involved"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#as_victim -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#as_victim">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-involved"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#as_warrior -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#as_warrior">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-involved"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#relative -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#relative">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-relation_with"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#visited_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#visited_by">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#was_alive -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#was_alive">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#Year"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-achieved_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-achieved_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-title"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character"/>
+        <rdfs:label xml:lang="it">achieved_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-involved -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-involved">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-event"/>
+        <rdfs:label xml:lang="en">involved</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-occurred_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-occurred_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-event"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#Year"/>
+        <rdfs:label xml:lang="it">occurred_in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-relation_with -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-relation_with">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character"/>
+        <rdfs:label xml:lang="it">relation_with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#admiration -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#admiration">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-relation_with"/>
+        <rdfs:label xml:lang="it">admiration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#duty_loyalty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#duty_loyalty">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-relation_with"/>
+        <rdfs:label xml:lang="it">duty_loyalty</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#hated -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#hated">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-relation_with"/>
+        <rdfs:label xml:lang="it">hated</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#honor_loyalty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#honor_loyalty">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-relation_with"/>
+        <rdfs:label xml:lang="it">honor_loyalty</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#love -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#love">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-relation_with"/>
+        <rdfs:label xml:lang="it">love</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#married -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#married">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLObjectProperty-relation_with"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label xml:lang="it">married</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#hasJob -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#hasJob">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#haveTitle"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#haveTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#haveTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#isGeneral -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#isGeneral">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#haveTitle"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#isLieutenant -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#isLieutenant">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#haveTitle"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#isSoldier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#isSoldier">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#haveTitle"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#year">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-years"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-character -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-character">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character"/>
+        <rdfs:label xml:lang="it">character</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-event -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-event">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-event"/>
+        <rdfs:label xml:lang="it">event</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-location">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-location"/>
+        <rdfs:label xml:lang="it">location</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-title">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-title"/>
+        <rdfs:label xml:lang="it">title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-years -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-years">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label xml:lang="it">years</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#about_event -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#about_event">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">about_event</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#about_life -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#about_life">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">about_life</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#about_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#about_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">event_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#age_of_death -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#age_of_death">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+        <rdfs:label xml:lang="it">age_of_death</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#character_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#character_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">character_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#city_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#city_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">city_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#era -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#era">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-years"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">era</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#is_war -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#is_war">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">is_war</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#physical_description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#physical_description">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">physical_description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#psychological_description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#psychological_description">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">psychological_description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#state_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#state_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">state_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#title_description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#title_description">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">title_description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#title_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#title_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">title_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#Year -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#Year">
+        <rdfs:label xml:lang="en">Year</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character">
+        <rdfs:label xml:lang="en">Character</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-event">
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-location">
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-title -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-title">
+        <rdfs:label xml:lang="it">Title</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#job -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#job">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-title"/>
+        <rdfs:label xml:lang="en">Job</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#military_rank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#military_rank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-title"/>
+        <rdfs:label xml:lang="en">MilitaryRank</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#political_office -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#political_office">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-title"/>
+        <rdfs:label xml:lang="en">PoliticalOffice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#artisan -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#artisan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#job"/>
+        <OWLObjectProperty-achieved_by rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#liubei"/>
+        <title_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A worker in a skilled trade, especially one that involves making things by hand.</title_description>
+        <title_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artisan</title_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#emperor -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#emperor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#political_office"/>
+        <title_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The higher grade a noble could achieve, the only one who rule over all the empire by divine will. If he hold the Imperial Seal, every soldier must answer to his call.</title_description>
+        <title_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emperor</title_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#farmer -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#farmer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#job"/>
+        <OWLObjectProperty-achieved_by rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#zhangfei"/>
+        <title_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person who owns or manages a farm.</title_description>
+        <title_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farmer</title_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#general -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#general">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#military_rank"/>
+        <OWLObjectProperty-achieved_by rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#zhujun"/>
+        <title_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The highest military grade. A general leads one or more army. This grade can be achieved only by merit.</title_description>
+        <title_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General</title_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#guangzong -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#guangzong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-location"/>
+        <city_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guangzong</city_name>
+        <state_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></state_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#guanyu -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#guanyu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character"/>
+        <ontology-of-the-3-kingdoms:as_warrior rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#yellowscarves01"/>
+        <OWLObjectProperty-relation_with rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#zhangfei"/>
+        <honor_loyalty rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#liubei"/>
+        <honor_loyalty rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#zhangfei"/>
+        <ontology-of-the-3-kingdoms:isSoldier rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">184</ontology-of-the-3-kingdoms:isSoldier>
+        <about_life rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></about_life>
+        <age_of_death rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">0</age_of_death>
+        <character_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guan Yu</character_name>
+        <physical_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">His whole appearance was dignified and awe-inspiring.</physical_description>
+        <psychological_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></psychological_description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#hanzhong -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#hanzhong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-location"/>
+        <city_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Han Zhong</city_name>
+        <state_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></state_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#lieutenant -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#lieutenant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#military_rank"/>
+        <OWLObjectProperty-achieved_by rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#liubei"/>
+        <title_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lieutenant can lead a large amount of troops, usually from 1000 to 5000 units. This rank could be achieved both by birthright or by merit.</title_description>
+        <title_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lieutenant</title_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#liubei -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#liubei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character"/>
+        <owl:sameAs rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#xuande"/>
+        <ontology-of-the-3-kingdoms:as_warrior rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#yellowscarves01"/>
+        <honor_loyalty rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#guanyu"/>
+        <honor_loyalty rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#zhangfei"/>
+        <ontology-of-the-3-kingdoms:hasJob rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">170</ontology-of-the-3-kingdoms:hasJob>
+        <ontology-of-the-3-kingdoms:isLieutenant rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">184</ontology-of-the-3-kingdoms:isLieutenant>
+        <about_life rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leader of the three oath brothers and founder of the kingdom of Shu (the Riverlands), posthumously First Ruler of the Shu-Han dynasty</about_life>
+        <age_of_death rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">0</age_of_death>
+        <character_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liu Bei</character_name>
+        <physical_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></physical_description>
+        <psychological_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liu Bei is a wise and honorable person, he can calmly judge the situation and act following his honor code and rules.</psychological_description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#lowlevelcivilpost -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#lowlevelcivilpost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#political_office"/>
+        <OWLObjectProperty-achieved_by rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#liubei"/>
+        <title_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A grade with no particular benefits aside from the salary. The one achieving it is one step above normal citiziens and can plea the state, but it&apos;s so unimportant that will probably get ignore by everyone.</title_description>
+        <title_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic low level Civil Post</title_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#qingzhou -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#qingzhou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-location"/>
+        <city_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qingzhou</city_name>
+        <state_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></state_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#soldier -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#soldier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#military_rank"/>
+        <OWLObjectProperty-achieved_by rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#guanyu"/>
+        <OWLObjectProperty-achieved_by rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#zhangfei"/>
+        <title_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A warrior that fight under an higher rank-person for money or honor.</title_description>
+        <title_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soldier</title_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#swornedbrother -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#swornedbrother">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-title"/>
+        <OWLObjectProperty-achieved_by rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#guanyu"/>
+        <OWLObjectProperty-achieved_by rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#liubei"/>
+        <OWLObjectProperty-achieved_by rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#zhangfei"/>
+        <title_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two or more people that shares the deepest form of admiration perform a rite where they sworn on their life to be always right and loyal to each others.
+They also promise to follow a oath.</title_description>
+        <title_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sworned Brothers</title_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#xuande -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#xuande">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#year1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#year1">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#Year"/>
+        <ontology-of-the-3-kingdoms:year rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">168</ontology-of-the-3-kingdoms:year>
+        <era rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Han</era>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#year15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#year15">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#Year"/>
+        <ontology-of-the-3-kingdoms:was_alive rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#guanyu"/>
+        <ontology-of-the-3-kingdoms:was_alive rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#liubei"/>
+        <ontology-of-the-3-kingdoms:was_alive rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#zhangfei"/>
+        <ontology-of-the-3-kingdoms:year rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">184</ontology-of-the-3-kingdoms:year>
+        <era rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Han</era>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#year2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#year2">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#Year"/>
+        <ontology-of-the-3-kingdoms:year rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">169</ontology-of-the-3-kingdoms:year>
+        <era rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Han</era>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#yellowscarves00 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#yellowscarves00">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-event"/>
+        <about_event rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a</about_event>
+        <about_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Foundation of Yellow Scarves</about_name>
+        <is_war rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_war>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#yellowscarves01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#yellowscarves01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-event"/>
+        <about_event rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></about_event>
+        <about_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yellow Scarves Uprising</about_name>
+        <is_war rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_war>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#zhangfei -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#zhangfei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character"/>
+        <ontology-of-the-3-kingdoms:as_warrior rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#yellowscarves01"/>
+        <honor_loyalty rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#guanyu"/>
+        <honor_loyalty rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#liubei"/>
+        <ontology-of-the-3-kingdoms:isSoldier rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">184</ontology-of-the-3-kingdoms:isSoldier>
+        <about_life rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></about_life>
+        <age_of_death rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">0</age_of_death>
+        <character_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhang Fei</character_name>
+        <physical_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhang Fei speake with loud bass voice and look as irresistible as a dashing horse.</physical_description>
+        <psychological_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhang Fei is a passionate person, easily deceived by provocation due to his short temper.</psychological_description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#zhujun -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#zhujun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character"/>
+        <ontology-of-the-3-kingdoms:as_warrior rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#yellowscarves01"/>
+        <OWLObjectProperty-relation_with rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#guanyu"/>
+        <OWLObjectProperty-relation_with rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#liubei"/>
+        <about_life rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></about_life>
+        <age_of_death rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">0</age_of_death>
+        <character_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhu Jun</character_name>
+        <physical_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></physical_description>
+        <psychological_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></psychological_description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#zhuo -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#zhuo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-location"/>
+        <ontology-of-the-3-kingdoms:visited_by rdf:resource="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#liubei"/>
+        <city_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhuo</city_name>
+        <state_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></state_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ontology-of-the-3-kingdoms.owl#Year"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-character"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-event"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLClass-title"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#job"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#military_rank"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#political_office"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-character"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-event"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-title"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/roberto/ontologies/2020/0/ontology-of-the-three-kingdo#OWLDataProperty-years"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
